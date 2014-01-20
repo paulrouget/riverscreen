@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Bebas';
+  src: url('fonts/BebasNeue.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fonts/fontawesome-webfont.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* { -moz-box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Bebas';
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+  flex: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0 40px;
+}
+
+/* Icons */
+
+.icon {
+  padding: 0 10px 20px;
+  text-align:center;
+  flex: auto;
+  color: white;
+}
+
+.icon > label {
+  margin-top: 10px;
+  display:flex;
+  justify-content: center;
+}
+
+.icon > label > span {
+  width:0;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1em;
+}
+
+.character {
+  width: var(size);
+  line-height: var(size);
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  background-color: var(bgcolor);
+  box-shadow: 0 3px 0 rgba(0,0,0,0.2), 0 3px 0 var(bgcolor);;
+}
+
+
+.character:before {
+  content: var(character);
+}
+
+/* Clock */
+
+#clock {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+  color: white;
+  flex-direction: column;
+}
+
+#time {
+  line-height: 4rem;
+  font-size: 4rem;
+  text-shadow: 0 2px 0 #CCC;
+  letter-spacing: -1px;  
+}
+
+#date {
+  font-size: 1.3rem;
+}
+
+.clock-hours:after {
+  content: ":";
+}

@@ -1,0 +1,85 @@
+.character[manifest-url] {
+  color: white;
+  var-bgcolor: #00A1CB;
+
+  var-size: 50px;
+  font-size: 25px;
+  border-radius: 5px;
+
+  var-character: "\f192";
+}
+
+.character[manifest-url="app://browser.gaiamobile.org/manifest.webapp"] {
+  var-character: "\f0ac";
+  var-bgcolor: #01A4A4;
+}
+
+.character[manifest-url="app://calendar.gaiamobile.org/manifest.webapp"] {
+  var-character: "\f133";
+  var-bgcolor: #FF0066;
+}
+
+.character[manifest-url="app://clock.gaiamobile.org/manifest.webapp"] {
+  var-character: "\f017";
+  var-bgcolor: #444444;
+}
+
+.character[manifest-url="app://costcontrol.gaiamobile.org/manifest.webapp"] {
+  var-character: "\f080";
+  var-bgcolor: #61AE24;
+}
+
+.character[manifest-url="app://video.gaiamobile.org/manifest.webapp"] {
+  var-character: "\f16a";
+  var-bgcolor: #113F8C;
+}
+
+.character[manifest-url="app://music.gaiamobile.org/manifest.webapp"] {
+  var-character: "\f001";
+  var-bgcolor: #E54028;
+}
+
+.character[manifest-url="app://music2.gaiamobile.org/manifest.webapp"] {
+  var-character: "\f025";
+  var-bgcolor: #32742C;
+}
+
+.character[manifest-url="app://fm.gaiamobile.org/manifest.webapp"] {
+  var-character: "\f192";
+  var-bgcolor: #D0D102;
+}
+
+.character[manifest-url="app://camera.gaiamobile.org/manifest.webapp"] {
+  var-character: "\f083";
+  var-bgcolor: #E54028;
+}
+
+.character[manifest-url="app://gallery.gaiamobile.org/manifest.webapp"] {
+  var-character: "\f03e";
+  var-bgcolor: #D0D102;
+}
+
+.character[manifest-url="app://sms.gaiamobile.org/manifest.webapp"] {
+  var-character: "\f086";
+  var-bgcolor: #D70060;
+}
+
+.character[manifest-url="app://email.gaiamobile.org/manifest.webapp"] {
+  var-character: "\f0e0";
+  var-bgcolor: #F18D05;
+}
+
+.character[manifest-url="app://settings.gaiamobile.org/manifest.webapp"] {
+  var-character: "\f085";
+  var-bgcolor: #F18D05;
+}
+
+.character[manifest-url="https://marketplace.firefox.com/packaged.webapp"] {
+  var-character: "\f07a";
+  var-bgcolor: #F18D05;
+}
+
+.character[manifest-url="https://marketplace.allizom.org/manifest.webapp"] {
+  var-character: "\f07a";
+  var-bgcolor: #F18D05;
+}

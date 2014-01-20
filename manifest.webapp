@@ -1,0 +1,35 @@
+{
+  "name": "riverscreen",
+  "description": "Gaia Alternative Homescreen",
+  "launch_path": "/index.html#root",
+  "type": "certified",
+  "role": "homescreen",
+  "developer": {
+    "name": "Paul Rouget",
+    "url": "https://github.com/paulrouget/riverscreen"
+  },
+  "permissions": {
+    "mobileconnection": {},
+    "webapps-manage": {},
+    "systemXHR": {},
+    "settings": {
+      "access": "readwrite"
+    },
+    "open-remote-window": {},
+    "storage": {},
+    "geolocation": {},
+    "alarms": {},
+    "power": {}
+  },
+  "locales": {
+    "en-US": {
+      "name": "Homescreen",
+      "description": "Gaia Homescreen"
+    }
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "30": "/style/icons/HomeScreen.png"
+  },
+  "orientation": "landscape,portrait"
+}
