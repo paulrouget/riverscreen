@@ -42,8 +42,4 @@ function createIcon(app) {
   return div;
 }
 
-window.addEventListener("DOMContentLoaded", function() {
-  populate();
-  console.log("XXX");
-  foobar();
-}, true);
+window.addEventListener("DOMContentLoaded", populate, true);
