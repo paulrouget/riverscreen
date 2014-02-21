@@ -1,85 +1,143 @@
-.character[manifest-url] {
+
+/* Icons */
+
+.icon {
+  padding: 0 20px 30px;
+  text-align:center;
+  flex: auto;
+  color: white;
+  display
+}
+
+.icon > label {
+  margin-top: 10px;
+  display:flex;
+  justify-content: center;
+}
+
+.icon > label > span {
+  width: 0;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  opacity: 1;
+  font-family: arial;
+}
+
+.character {
+  width: var(size);
+  line-height: var(size);
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -x-background-color: var(bgcolor);
+  -x-box-shadow: 0 3px 0 rgba(0,0,0,0.2), 0 3px 0 var(bgcolor);;
+}
+
+.icon[manifest-url] { order: 999; }
+.icon[manifest-url] > .character {
   color: white;
   var-bgcolor: #00A1CB;
-
   var-size: 50px;
-  font-size: 25px;
-  border-radius: 5px;
-
+  font-size: 30px;
+  border-radius: 4px 4px;
   var-character: "\f192";
 }
 
-.character[manifest-url="app://browser.gaiamobile.org/manifest.webapp"] {
+.icon[manifest-url="app://browser.gaiamobile.org/manifest.webapp"] { order: 1; }
+.icon[manifest-url="app://browser.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f0ac";
-  var-bgcolor: #01A4A4;
+  var-bgcolor: ##FCAE0B;
 }
 
-.character[manifest-url="app://calendar.gaiamobile.org/manifest.webapp"] {
+.icon[manifest-url="https://mobile.twitter.com/cache/twitter.webapp"] { order: 2; }
+.icon[manifest-url="https://mobile.twitter.com/cache/twitter.webapp"] > .character {
+  var-character: "\f099";
+  color: #01A4A4;
+}
+
+.icon[manifest-url="app://calendar.gaiamobile.org/manifest.webapp"] { order: 3; }
+.icon[manifest-url="app://calendar.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f133";
   var-bgcolor: #FF0066;
 }
 
-.character[manifest-url="app://clock.gaiamobile.org/manifest.webapp"] {
-  var-character: "\f017";
-  var-bgcolor: #444444;
+.icon[manifest-url="app://email.gaiamobile.org/manifest.webapp"] { order: 4; }
+.icon[manifest-url="app://email.gaiamobile.org/manifest.webapp"] > .character {
+  var-character: "\f0e0";
+  var-bgcolor: #F06;
+  /*box-shadow: none;*/
+  /*margin: -1px;*/
+  /*width: 150px;*/
+  /*border: 1px dashed white;*/
 }
 
-.character[manifest-url="app://costcontrol.gaiamobile.org/manifest.webapp"] {
+.icon[manifest-url="app://costcontrol.gaiamobile.org/manifest.webapp"] { order: 5; }
+.icon[manifest-url="app://costcontrol.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f080";
   var-bgcolor: #61AE24;
 }
 
-.character[manifest-url="app://video.gaiamobile.org/manifest.webapp"] {
+.icon[manifest-url="app://video.gaiamobile.org/manifest.webapp"] { order: 6; }
+.icon[manifest-url="app://video.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f16a";
   var-bgcolor: #113F8C;
 }
 
-.character[manifest-url="app://music.gaiamobile.org/manifest.webapp"] {
+.icon[manifest-url="app://music.gaiamobile.org/manifest.webapp"] { order: 7; }
+.icon[manifest-url="app://music.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f001";
   var-bgcolor: #E54028;
 }
 
-.character[manifest-url="app://music2.gaiamobile.org/manifest.webapp"] {
-  var-character: "\f025";
-  var-bgcolor: #32742C;
-}
-
-.character[manifest-url="app://fm.gaiamobile.org/manifest.webapp"] {
+.icon[manifest-url="app://fm.gaiamobile.org/manifest.webapp"] { order: 8; }
+.icon[manifest-url="app://fm.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f192";
   var-bgcolor: #D0D102;
 }
 
-.character[manifest-url="app://camera.gaiamobile.org/manifest.webapp"] {
+.icon[manifest-url="app://camera.gaiamobile.org/manifest.webapp"] { order: 9; }
+.icon[manifest-url="app://camera.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f083";
   var-bgcolor: #E54028;
 }
 
-.character[manifest-url="app://gallery.gaiamobile.org/manifest.webapp"] {
+.icon[manifest-url="app://gallery.gaiamobile.org/manifest.webapp"] { order: 10; }
+.icon[manifest-url="app://gallery.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f03e";
   var-bgcolor: #D0D102;
 }
 
-.character[manifest-url="app://sms.gaiamobile.org/manifest.webapp"] {
+.icon[manifest-url="app://sms.gaiamobile.org/manifest.webapp"] { order: 11; }
+.icon[manifest-url="app://sms.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f086";
   var-bgcolor: #D70060;
 }
 
-.character[manifest-url="app://email.gaiamobile.org/manifest.webapp"] {
-  var-character: "\f0e0";
-  var-bgcolor: #F18D05;
+.icon[manifest-url="app://clock.gaiamobile.org/manifest.webapp"] { order: 12; }
+.icon[manifest-url="app://clock.gaiamobile.org/manifest.webapp"] > .character {
+  var-character: "\f017";
+  var-bgcolor: #444444;
 }
 
-.character[manifest-url="app://settings.gaiamobile.org/manifest.webapp"] {
+.icon[manifest-url="app://settings.gaiamobile.org/manifest.webapp"] { order: 13; }
+.icon[manifest-url="app://settings.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f085";
   var-bgcolor: #F18D05;
+  /* width: 255px; */
 }
 
-.character[manifest-url="https://marketplace.firefox.com/packaged.webapp"] {
+.icon[manifest-url="https://marketplace.firefox.com/packaged.webapp"] { order: 14; }
+.icon[manifest-url="https://marketplace.firefox.com/packaged.webapp"] > .character {
   var-character: "\f07a";
   var-bgcolor: #F18D05;
 }
 
-.character[manifest-url="https://marketplace.allizom.org/manifest.webapp"] {
+.icon[manifest-url="https://marketplace.allizom.org/manifest.webapp"] { order: 15; }
+.icon[manifest-url="https://marketplace.allizom.org/manifest.webapp"] > .character {
   var-character: "\f07a";
   var-bgcolor: #F18D05;
 }

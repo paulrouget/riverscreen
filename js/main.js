@@ -9,6 +9,7 @@ function populate() {
     let i = 0;
     for (let app of apps) {
       i++;
+      console.log("role", app.manifest.role);
       if (HIDDEN_ROLES.indexOf(app.manifest.role) > -1)
         continue
       if (i > 100) break;
@@ -21,10 +22,10 @@ function populate() {
 function createIcon(app) {
   let div = document.createElement("div");
   div.className = "icon";
+  div.setAttribute("manifest-url", app.manifestURL);
 
   let character = document.createElement("span");
   character.className = "character";
-  character.setAttribute("manifest-url", app.manifestURL);
 
   let span = document.createElement("span");
   span.textContent = app.manifest.name;
@@ -42,4 +43,9 @@ function createIcon(app) {
   return div;
 }
 
-window.addEventListener("DOMContentLoaded", populate, true);
+window.addEventListener("DOMContentLoaded", () => {
+  let appMgr = navigator.mozApps.mgmt;
+  appMgr.oninstall = populate;
+  appMgr.onuninstall = populate;
+  populate();
+}, true);

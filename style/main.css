@@ -19,7 +19,6 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Bebas';
 }
 
 body {
@@ -36,42 +35,6 @@ main {
   padding: 0 40px;
 }
 
-/* Icons */
-
-.icon {
-  padding: 0 10px 20px;
-  text-align:center;
-  flex: auto;
-  color: white;
-}
-
-.icon > label {
-  margin-top: 10px;
-  display:flex;
-  justify-content: center;
-}
-
-.icon > label > span {
-  width:0;
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 1em;
-}
-
-.character {
-  width: var(size);
-  line-height: var(size);
-  display: inline-block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  background-color: var(bgcolor);
-  box-shadow: 0 3px 0 rgba(0,0,0,0.2), 0 3px 0 var(bgcolor);;
-}
-
-
 .character:before {
   content: var(character);
 }
@@ -79,6 +42,7 @@ main {
 /* Clock */
 
 #clock {
+  font-family: 'Bebas';
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -88,14 +52,14 @@ main {
 }
 
 #time {
-  line-height: 4rem;
-  font-size: 4rem;
+  line-height: 100%;
+  font-size: 10rem;
   text-shadow: 0 2px 0 #CCC;
   letter-spacing: -1px;  
 }
 
 #date {
-  font-size: 1.3rem;
+  font-size: 2.5rem;
 }
 
 .clock-hours:after {
