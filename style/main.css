@@ -24,6 +24,8 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  background: url(../w.png);
+  background-attachment: fixed;
 }
 
 main {

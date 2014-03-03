@@ -6,7 +6,6 @@
   text-align:center;
   flex: auto;
   color: white;
-  display
 }
 
 .icon > label {
@@ -50,13 +49,13 @@
 .icon[manifest-url="app://browser.gaiamobile.org/manifest.webapp"] { order: 1; }
 .icon[manifest-url="app://browser.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f0ac";
-  var-bgcolor: ##FCAE0B;
+  var-bgcolor: #FCAE0B;
 }
 
 .icon[manifest-url="https://mobile.twitter.com/cache/twitter.webapp"] { order: 2; }
 .icon[manifest-url="https://mobile.twitter.com/cache/twitter.webapp"] > .character {
   var-character: "\f099";
-  color: #01A4A4;
+  -x-color: #01A4A4;
 }
 
 .icon[manifest-url="app://calendar.gaiamobile.org/manifest.webapp"] { order: 3; }
@@ -69,10 +68,11 @@
 .icon[manifest-url="app://email.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f0e0";
   var-bgcolor: #F06;
-  /*box-shadow: none;*/
-  /*margin: -1px;*/
-  /*width: 150px;*/
-  /*border: 1px dashed white;*/
+  color: #F06;
+  /*box-shadow: none;
+  margin: -1px;
+  width: 150px;
+  border: 1px dashed white;*/
 }
 
 .icon[manifest-url="app://costcontrol.gaiamobile.org/manifest.webapp"] { order: 5; }
