@@ -12,6 +12,12 @@ let clock = {
     this.monthNode = document.querySelector(".clock-month");
     this.yearNode = document.querySelector(".clock-year");
     this.tick();
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden === false) {
+        this.tick();
+      }
+    });
   },
   tick: function() {
     let now = new Date();

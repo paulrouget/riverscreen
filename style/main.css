@@ -19,16 +19,16 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  background: url(../w.png);
-  background-attachment: fixed;
+  background-size: 100% auto;
+  overflow-y: scroll;
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+}
+
+#icons {
   width: 100%;
   flex: auto;
   display: flex;
@@ -60,10 +60,11 @@ main {
   letter-spacing: -1px;  
 }
 
-#date {
-  font-size: 2.5rem;
+.clock-hours {
+}
+.clock-minutes {
 }
 
-.clock-hours:after {
-  content: ":";
+#date {
+  font-size: 2.5rem;
 }
