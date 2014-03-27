@@ -68,3 +68,10 @@ main {
 #date {
   font-size: 2.5rem;
 }
+
+@media only screen
+and (max-width : 320px) {
+  #time {
+    font-size: 9.5rem;
+  }
+}

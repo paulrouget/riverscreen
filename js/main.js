@@ -60,7 +60,7 @@ function createIcon(app, entryKey) {
 }
 
 function updateWallpaper() {
-  let req = navigator.mozSettings.createLock().get();
+  let req = navigator.mozSettings.createLock().get('wallpaper.image');
   req.onsuccess = function onsuccess() {
     let blob = req.result['wallpaper.image'];
     let url = URL.createObjectURL(blob);
